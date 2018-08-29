@@ -1,0 +1,99 @@
+<div class="subpage">
+    <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+    </button>
+
+
+    <div class= "subpage-content container" >
+
+      <h2></h2>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+         <div class="subpage">
+  <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+  </button>
+
+
+  <div class= "subpage-content container" >
+
+    <h2></h2>
+    <hr>
+    <br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <carousel>
+              <slide *ngFor="let x of images">
+                <img src="assets/img/programs/mcn/{{x}}" alt="{{x}}" style="display: block; width: 750px; height:500px;">
+              </slide>
+            </carousel>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+       <div class="kids_program">
+         <div class="kids_program_content">
+            <h3>Maternal-Child Nursing Home-Visit Program</h3>
+            <p>
+              Working with moms and babies in their own homes.
+              <a ui-sref="visitprogram">Learn more . . .</a>
+            </p>
+            <ul>
+              <li>
+                <img src="assets/img/icons/person.png" alt="person">
+                <p>Pregnant and new moms.</p>
+              </li>
+              <li>
+                <img src="assets/img/icons/clock.png" alt="clock">
+                <p>Prenatally or right after birth of a baby up to two years.</p>
+              </li>
+              <li>
+                <img src="assets/img/icons/register.png" alt="register">
+                <p>
+                  Contact WKO office
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button ui-sref="contact">Contact Us</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+         <div class="kids_program">
+           <div class="kids_program_content">
+              <h3>Maternal-Child Nursing Home-Visit Program</h3>
+              <p>
+                Working with moms and babies in their own homes.
+                <a ui-sref="visitprogram">Learn more . . .</a>
+              </p>
+              <ul>
+                <li>
+                  <img src="assets/img/icons/person.png" alt="person">
+                  <p>Pregnant and new moms.</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/clock.png" alt="clock">
+                  <p>Prenatally or right after birth of a baby up to two years.</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/register.png" alt="register">
+                  <p>
+                    Contact WKO office
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <button routerLink="contact">Contact Us</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>

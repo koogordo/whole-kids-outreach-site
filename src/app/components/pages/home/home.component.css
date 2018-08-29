@@ -1,0 +1,102 @@
+.nav-wrap {
+  background-image: url(/assets/img/kids.jpg);
+  background-size: cover;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: 0px 1px;
+}
+
+.navbar {
+  width: 100%;
+  border-radius: 0px !important;
+}
+
+.home-link {
+  height: 40px !important;
+}
+
+h4 {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.event-menu {
+  position: absolute;
+  z-index: 99;
+}
+
+.drop-toggle {
+  border-radius: 2px !important;
+  width: 400px !important;
+}
+
+.no-pad {
+  padding: 0px;
+}
+
+.pr-5 {
+
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.npl {
+  padding-left: 0px;
+}
+
+.npr {
+  padding-right: 0px;
+}
+
+.pad-top {
+  padding-top:10px;
+}
+
+.centered {
+  margin: auto !important;
+}
+
+.m-t-0 {
+  margin-top: 0px;
+}
+
+.side-margin {
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.margin-logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 333px;
+}
+
+.override-container {
+  width: 85%;
+}
+
+.event-link-on-sm {
+  height: 35px;
+  display: flex;
+  padding-top: 7px;
+  justify-content: center;
+  color: white;
+  background-color: #a967aa;
+}
+
+.event-link-on-sm:hover {
+  color: #a967aa;
+  background: white;
+  text-decoration: none;
+}
+
+.push-right {
+  margin-left: 10px;
+}
+
+.no-pad-top {
+  padding-top: 0px;
+}

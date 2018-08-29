@@ -1,0 +1,18 @@
+.event-image {
+  height: 350px;
+  /* width: 33.3%; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5px;
+
+}
+
+.center {
+  margin: auto;
+}
+
+.override-container {
+  width: 85% !important;
+  margin: auto !important;
+}

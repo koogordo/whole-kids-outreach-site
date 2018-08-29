@@ -1,0 +1,79 @@
+#footer {
+  font-size: 1.3em;
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  clear: both;
+  padding-bottom: 20px;
+}
+
+.footer-content{
+  padding-bottom: 20px;
+
+}
+.footer-color-line {
+  padding: 0px;
+  margin-top: 10px;
+  height: 10px;
+  background-image: url(../img/foot-color.png);
+}
+
+#footer li {
+  list-style: none;
+  margin: 0;
+}
+
+#footer ul {
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+#footer p {
+  display: inline;
+}
+
+.footer-navbar a {
+     padding-top: 4px;
+}
+
+.footer-donate {
+     margin-top: 10px;
+}
+
+/*
+.footer-navbar li {
+   display: inline;
+   padding-right: 30px;
+}
+*/
+
+.input-group-addon {
+  padding: 0 10px;
+  background-color: #60c6a0;
+}
+.form-control {
+  border-color: #60c6a0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Subscribe_button {
+  color: #fff;
+  border: none;
+  width: 100%;
+}
+
+.copyright {
+    background: #EEE;
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.copyright p{
+  font-style: italic;
+  color: #000;
+  font-size: .9em;
+}

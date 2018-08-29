@@ -1,0 +1,21 @@
+
+<div class="flex-ticker">
+  <div class="flex-item" *ngFor="let event of events">
+      <a routerLink="event-view/{{event.id}}" class="flex-event-link">
+        {{event.title}} <span class="push-right"><i class="new-event-icon fa fa-bell-o" *ngIf="checkDate(event.createdAt)"></i></span>
+    </a>
+  </div>
+  <div class="flex-item">
+      <a routerLink="all-events" class="see-more-link">
+        All Events <span class="push-right"> <i class="fa fa-arrow-circle-right"></i></span>
+      </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+

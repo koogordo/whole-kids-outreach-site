@@ -1,0 +1,102 @@
+<!--<mat-toolbar class="bg-white toolbar">
+      <div id="collapseMenu" class="collapse" *ngIf="mobileQuery.matches">
+          <ul class="nav flex-column">
+              <li class="nav-item">
+                  <a mat-button color="primary" class="no-underline" routerLink="ourStory">Our Story</a>
+              </li>
+              <li class="nav-item">
+                  <a mat-button color="primary" class="no-underline" routerLink="programs">Programs</a>
+              </li>
+              <li class="nav-item">
+                  <a mat-button color="primary" class="no-underline" routerLink="impact">Need &amp; Impact</a>
+              </li>
+              <li class="nav-item">
+                  <a mat-button color="primary" class="no-underline" routerLink="helpUs">Get Involved</a>
+              </li>
+              <li class="nav-item">
+                  <a mat-button color="primary" class="no-underline" routerLink="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a mat-button color="primary" class="no-underline" routerLink="donate"><span class="donate-button-border">Donate</span></a>
+              </li>
+          </ul>
+      </div>
+      <mat-toolbar-row *ngIf="mobileQuery.matches">
+          <a class="logo" routerLink=""><img class="logo" src="assets/img/logo.png" alt="logo"></a>
+          <span class="spacer"></span>
+          <button mat-mini-fab color="primary" data-toggle="collapse" data-target="#collapseMenu"><mat-icon>menu</mat-icon></button>
+      </mat-toolbar-row>
+
+  <mat-toolbar-row *ngIf="!mobileQuery.matches">
+            <a class="logo" routerLink=""><img class="logo" src="assets/img/logo.png" alt="logo"></a>
+            <span class="spacer"></span>
+            <a mat-button color="primary" class="no-underline" routerLink="ourStory">Our Story</a>
+            <a mat-button color="primary" class="no-underline" routerLink="programs">Programs</a>
+            <a mat-button color="primary" class="no-underline" routerLink="impact">Need &amp; Impact</a>
+            <a mat-button color="primary" class="no-underline" routerLink="helpUs">Get Involved</a>
+            <a mat-button color="primary" class="no-underline" routerLink="contact">Contact</a>
+            <a mat-button color="primary" class="no-underline" routerLink="donate"><span class="donate-button-border">Donate</span></a>
+    </mat-toolbar-row>
+</mat-toolbar> -->
+
+        <nav class="navbar navbar-inverse bs-docs-nav" role="banner">
+            <div class="container">
+              <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="logo" href="#"><img class="logo" src="assets/img/logo.png" alt="logo"></a>
+              </div>
+              <div class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                  <li><a routerLink="">Home</a></li>
+                  <li><a routerLink="ourStory">Our Story</a></li>
+                  <li><a routerLink="programs">Programs</a></li>
+                  <li><a routerLink="impact">Need &amp; Impact</a></li>
+                  <li><a routerLink="helpUs">Get Involved</a></li>
+                  <li><a routerLink="contact">Contact</a></li>
+                  <li><a routerLink="donate"><span class="donate-button-border">Donate</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+<!-- <app-ticker></app-ticker> -->
+
+
+
+  <!-- Javascript for paypal donations -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js">
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.js"></script>
+  <script src="assets/js/angular-ui-router.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/controller.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/slippry.min.js"></script>
+
+  <!-- Code for X to close subpage -->
+  <script>
+    $(document).ready(function() {
+      $(".navbar-nav > li > a").click(function(ev) {
+        if($(window).width() < 1200) {
+          $(".bs-navbar-collapse").collapse('hide');
+          //return false;
+        }
+      });
+    });
+    function goBack() {
+      window.history.back();
+    }
+  </script>

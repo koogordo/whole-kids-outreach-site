@@ -1,0 +1,488 @@
+<div class="subpage">
+  <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+  </button>
+
+  <div class= "subpage-content container">
+    <h1 class="text-center">
+      WKO Team
+    </h1>
+
+    <hr>
+
+    <div class="row team-stats ">
+
+      <div class="col-xs-12 col-md-4">
+        <div class="col-xs-6 col-md-6 text_team_right">
+          <h1>
+            14
+          </h1>
+        </div>
+
+        <div class="col-xs-6 col-md-6 text_team_left">
+          <p>
+            Home visitors
+            & program staff
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="col-xs-6 col-md-6 text_team_right">
+          <h1>
+           4
+          </h1>
+        </div>
+
+        <div class="col-xs-6 col-md-6 text_team_left">
+          <p>
+            Administrators
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="col-xs-6 col-md-6 text_team_right">
+          <h1>
+            20
+          </h1>
+        </div>
+
+        <div class="col-xs-6 col-md-6 text_team_left">
+          <p>
+            Board Directors & Advisory
+            members
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div  class="row staff team">
+      <div class="col-xs-12 col-md-4 col-xs-offset-1 col-md-offset-0">
+        <div class="img-center">
+          <img src="assets/img/founder.jpg"  class="img-responsive img-circle" alt="Responsive image" alt="sister Anne">
+        </div>
+
+        <h2>
+          Sister Anne Francioni
+          <br>
+          SSND, RN, MA
+        </h2>
+
+        <h4>
+          Co-Founder and Director
+        </h4>
+
+        <p>
+          Sr. Anne is a native of New Orleans
+          and has lived and worked in Missouri since 1982.
+        </p>
+
+        <button class="learn_more_button" ng-click="sisteranne=!sisteranne; centerstaff = 0; boardmembers = 0; scrollToBoardMemebers()">
+          Learn More&nbsp;
+          <i class="fa fa-arrow-down"></i>
+          <!--
+          <img src="assets/img/arrows/greenDown.png" height="10" width="10">
+          -->
+        </button>
+      </div>
+
+      <div id="centerstaff" class="col-xs-12 col-md-4 col-xs-offset-1  col-md-offset-0">
+        <div class="img-center">
+          <img src="assets/img/staff1.jpg"  class="img-responsive img-circle" alt="Responsive image" alt="staff">
+        </div>
+
+        <h1>
+          Staff
+        </h1>
+
+        <p>
+          WKO’s dedicated, professional staff
+          manage the day-to-day operations and also
+          implement the home visiting and center-based programs.
+        </p>
+
+        <button class="learn_more_button" ng-click="centerstaff=!centerstaff; sisteranne = 0; boardmembers = 0; scrollToBoardMemebers()">
+          Learn More&nbsp;
+          <i class="fa fa-arrow-down"></i>
+        </button>
+      </div>
+
+      <div id="boardmembers" class="col-xs-12 col-md-4 col-xs-offset-1  col-md-offset-0">
+        <div class="img-center">
+          <img src="assets/img/board1.jpg"  class="img-responsive img-circle" alt="Responsive image" alt="staff">
+        </div>
+
+        <h1>
+          Board Members
+        </h1>
+
+        <p>
+          Whole Kids Outreach is blessed to have a diverse Board of Directors and an Advisory Board
+          of individuals with a vision to help others.
+        </p>
+
+        <button class="learn_more_button" ng-click="boardmembers=!boardmembers; sisteranne = 0; centerstaff = 0; scrollToBoardMemebers()">
+          Learn More&nbsp;
+          <i class="fa fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="sisteranne" ng-show="sisteranne">
+      <h2>
+        Sister Anne Francioni, Co-Founder
+      </h2>
+      <div class="row" >
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <div class="img-center">
+            <img src="assets/img/srAnne.jpg" class="img-responsive" alt="Sr. Anne">
+            <br>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+          When Sister Anne Francioni, SSND, RN, MA came to St. Louis from her home in New Orleans, she pursued her dream
+          of being a pediatric nurse in two of St. Louis’s children’s hospitals.
+          From there she accepted the role of director of St. Mary’s Special School in St. Louis where she worked with
+          children who had significant and varied developmental challenges.
+          Later came her call to serve God as a School Sister of Notre Dame.
+          It was then she was led to southeast Missouri to assist other Sisters who were working in the area.
+          She will tell all who ask her:
+
+          <blockquote>
+            <em>
+              “After meeting the children and seeing the way of life in this area, I knew I wanted to stay!”
+            </em>
+          </blockquote>
+
+          Since she received permission from the School Sisters of Notre Dame to start Whole Kids Outreach in 1999,
+          Sr. Anne has continued to be an agent of change in our region, helping families work toward better futures
+          for their children.
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="centerstaff" class="searchable-container">
+      <h2>
+        CENTER STAFF
+      </h2>
+
+      <div class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix" >
+        <div class="items col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix">
+          <div class="img-center">
+            <img src="assets/img/staff2.jpg" class="img-responsive" alt="staff">
+          </div>
+        </div>
+      </div>
+
+     <div *ngFor="let staff of staffers" class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix ng-scope" >
+        <div class="items col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix">
+          <div class="info-block">
+            <h3 class="ng-binding">
+              {{staff.fname}} {{staff.lname}}{{staff.suffix ? ', '+staff.suffix : ''}}
+            </h3>
+
+            <p class="ng-binding">
+              {{staffPositions[staff.position]}}
+              <br>
+              <a class="glyphicon glyphicon-envelope ng-binding" href="mailto:{{staff.staffEmail}}">&nbsp;{{staff.staffEmail}}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div ng-show="boardmembers" class="searchable-container">
+      <h2>
+        BOARD of DIRECTORS
+      </h2>
+
+      <div class="items col-xs-9 col-sm-6 col-md-4 col-lg-4 clearfix" >
+        <div class="img-center">
+          <br>
+          <img src="assets/img/board2.jpg" class="img-responsive" alt="staff">
+        </div>
+      </div>
+
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope"
+       *ngFor="let mem of board"
+      >
+        <div class="info-block">
+          <h3 class="ng-binding">
+            {{mem.fname}} {{mem.lname}}
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">{{boardPositions[mem.position]}}</em>
+            <br>
+            {{mem.occupation}}, <br>{{mem.employer}}
+          </p>
+        </div>
+      </div>
+<!--
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Amanda Suchara
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Vice President</em>
+            <br>
+            Professional Musician, <br>Silent-C
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Brett Carney
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Recording Secretary</em>
+            <br>
+            Director of Product Development, <br>Emerson Tool
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            John Schulte
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Treasurer</em>
+            <br>
+            Senior Finance Manager, <br>Boeing
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Kathie Askren
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Member</em>
+            <br>
+            Principal, <br>Edward Jones
+          </p>
+        </div>
+      </div>
+     <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Tricia George
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Member</em>
+            <br>
+            Administrative Assistant,
+            <br>
+            Ellington Telephone Company
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Maryann Lavender
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Member</em>
+            <br>
+            WKO Outreach Specialist,
+            <br>
+            Retired
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Christy Roberts
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Member</em>
+            <br>
+            Office Administrator,
+            <br>
+            Roberts Pallet Company, Inc.
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Lisa Schulte
+          </h3>
+
+          <p class="ng-binding">
+            <em class="ng-binding">Board Member</em>
+            <br>
+            National Account Executive,
+            <br>
+            American Hospital Association
+          </p>
+        </div>
+      </div> -->
+    </div>
+
+    <div ng-show="boardmembers" class="searchable-container">
+      <div class="items col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix ng-scope">
+        <h2>
+          ADVISORY BOARD MEMBERS
+        </h2>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Courtney Atkinson, DMD
+          </h3>
+
+          <p class="ng-binding">
+            Orthodontist, McGuire Orthodontics, LLC
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Lynette Ballard
+          </h3>
+
+          <p class="ng-binding">
+            Senior Director,
+            Catholic Health Association of the United States
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Mick Byrne
+          </h3>
+
+          <p class="ng-binding">
+            Investment Advisor, Huntleigh Securities
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Jenny Costley
+          </h3>
+
+          <p class="ng-binding">
+            Accounting Director,
+            Cirrus Aircraft
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Angela Kirby
+          </h3>
+
+          <p class="ng-binding">
+            Attorney, The Kirby Law Firm
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            James Morgan
+          </h3>
+
+          <p class="ng-binding">
+            President,
+            Subsurface Constructors
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Stephanie Morgan
+          </h3>
+
+          <p class="ng-binding">
+            Co-Founder, Whole Kids Outreach
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Sister Mary Roch Rocklage, RSM
+          </h3>
+
+          <p class="ng-binding">
+            Sisters of Mercy Health System
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Claudia Preuschoff, MD
+          </h3>
+
+          <p class="ng-binding">
+            Poplar Bluff Pediatrics;
+            Southeast Missouri Hospital
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Lara Noble, Au.D.
+          </h3>
+
+          <p class="ng-binding">
+            District Hearing Specialist and Audiologist, Poplar Bluff R1 School District
+          </p>
+        </div>
+      </div>
+
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Nathalie Williams, PhD, RN
+          </h3>
+
+          <p class="ng-binding">
+            Assistant Professor, retired,
+            School of Nursing, Southern Illinois Edwardsville
+          </p>
+        </div>
+      </div>
+      <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4 clearfix ng-scope">
+        <div class="info-block">
+          <h3 class="ng-binding">
+            Scott Williams
+          </h3>
+
+          <p class="ng-binding">
+            St. Charles, Missouri
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

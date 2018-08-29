@@ -1,0 +1,208 @@
+<div class="container-fluid" [class.override-container]="winSize >= 1200">
+    <div class="wrapper general-wrapper home-wrapper container-fluid no-pad-top">
+
+    <div class="row">
+        <div *ngIf="winSize >= 700; Else showEventButton" class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+            <app-ticker></app-ticker>
+        </div>
+
+        <ng-template #showEventButton>
+             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="text-center">
+                <a color="primary" routerLink="all-events" class="event-link-on-sm">Our Events<span class="push-right"> <i class="fa fa-arrow-circle-right"></i></span></a>
+              </div>
+            </div>
+        </ng-template>
+
+
+
+    </div>
+    <div class="home-color-boxes">
+        <img class="home-img img-center" src="assets/img/kids.jpg">
+        <div class="row container-well-home col-sm-12 col-md-12 col-lg-8">
+                <a routerLink="whyWeServe">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col home-well" id="green">
+                      <h2>
+                        Why We Serve&nbsp;
+                        <i class="fa fa-arrow-circle-right"></i>
+                      </h2>
+                    </div>
+                  </a>
+
+
+                <a routerLink="howWeWork">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col home-well" id="purple">
+                      <h2>
+                        How We Work&nbsp;
+                        <i class="fa fa-arrow-circle-right"></i>
+                      </h2>
+                    </div>
+                  </a>
+
+
+                <a routerLink="joinUs">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col home-well" id="blue">
+                      <h2>
+                        You Can Join Us&nbsp;
+                        <i class="fa fa-arrow-circle-right"></i>
+                      </h2>
+                    </div>
+                  </a>
+
+        </div>
+
+        <div class="container-well-home-2 row col-sm-12 col-md-12">
+            <a routerLink="whyWeServe">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col home-well-2" id="green">
+                  <h2>
+                    Why We Serve&nbsp;
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </h2>
+                </div>
+              </a>
+
+
+            <a routerLink="howWeWork">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col home-well-2" id="purple">
+                  <h2>
+                    How We Work&nbsp;
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </h2>
+                </div>
+              </a>
+
+
+            <a routerLink="joinUs">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col home-well-2" id="blue">
+                  <h2>
+                    You Can Join Us&nbsp;
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </h2>
+                </div>
+              </a>
+
+    </div>
+
+    </div>
+
+    <div class="home-goals row col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+      <div class="col-sm-12 col-md-12 col">
+        <h2>
+        <span class="emph">W</span>hole <span class="emph">K</span>ids <span class="emph">O</span>utreach
+        works to <br>
+        <i>create strong families an ensure healthy children.</i>
+        </h2>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="home-goals-numbers">
+            <i class="fa fa-asterisk"></i>
+          </h1>
+        </div>
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="home-goals-text">
+            Creating strong, healthy, and happy families in rural areas of southeast Missouri.
+          </h3>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="home-goals-numbers home-color-purple">
+            <i class="fa fa-asterisk"></i>
+          </h1>
+        </div>
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>
+            Helping children live full lives free from preventable abuse, neglect and illness.
+          </h3>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="home-goals-numbers home-color-blue">
+            <i class="fa fa-asterisk"></i>
+          </h1>
+        </div>
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>
+            Helping those who don't have the means to help themselves.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-info row col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 col">
+        <h2>
+          <a routerLink="impact">Our Service Area</a>
+        </h2>
+        <h3>
+          We serve <b>6 counties</b> in rural southeast Missouri, where the average yearly income
+          for a WKO family of four is <b>$15,500</b>.
+          <a routerLink="impact">
+            <span class="action"><span class="action_arrow_g img-center">
+                  <!-- arrow defined in css -->
+            </span></span>
+          </a>
+        </h3>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-1 col">
+        <a href=
+        "https://www.google.com/maps/place/37%C2%B010%2733.3%22N+90%C2%B057%2759.4%22W/@37.1699412,-90.9693449,3216m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0?hl=en"
+             target="_blank">
+        <img class="img-responsive img-center" src="/assets/img/map-6county.png" alt="Whole Kids Missourri Map">
+        </a>
+      </div>
+    </div>
+
+    <div class="home-info row col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 col">
+        <h2>
+          <a routerLink="programs">Our Programs</a>
+        </h2>
+        <h3>
+          Our diverse programs and activities are intended to help the “whole” child develop
+          by educating and strengthening children and their parents.
+          &nbsp;
+           <a routerLink="programs">
+            <span class="action"><span class="action_arrow_g img-center">
+                  <!-- arrow defined in css -->
+            </span></span>
+          </a>
+        </h3>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-1 col">
+        <a routerLink="programs">
+          <img class= "img-responsive img-center" src="/assets/img/integrated.png" alt="Integrated programs: center-based for kids, center-based for families, home visits">
+        </a>
+      </div>
+    </div>
+
+    <div class="home-info row col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 col">
+        <h2>
+          <a routerLink="children">Our Children</a>
+        </h2>
+        <h3>
+          Children are at the heart of all we do.
+          &nbsp;
+          <a routerLink="children">
+            <span class="action"><span class="action_arrow_g img-center">
+                  <!-- arrow defined in css -->
+            </span></span>
+          </a>
+        </h3>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-1 col">
+        <a routerLink="children">
+        <img class="img-circle img-center img-responsive" src="/assets/img/holdinghands.png" alt="">
+        </a>
+        <br><br>
+      </div>
+    </div>
+
+  </div>
+</div>

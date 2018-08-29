@@ -1,0 +1,51 @@
+<div class="subpage">
+    <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+    </button>
+
+
+    <div class= "subpage-content container">
+
+      <h2></h2>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 kids_img">
+            <carousel>
+                <slide *ngFor="let x of images">
+                  <img src="assets/img/programs/swim/{{x}}" alt="{{x}}" style="display: block; width: 750px; height:500px;">
+                </slide>
+              </carousel>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="kids_program">
+             <div class="kids_program_content">
+              <h3>Swimming Pool</h3>
+              <p>
+                Learn water safety and increase swimming proficiency.
+              </p>
+              <ul>
+                <li>
+                  <img src="assets/img/icons/person.png" alt="person">
+                  <p>Individuals and groups</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/clock.png" alt="clock">
+                  <p>Mid-May thru mid-September</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/register.png" alt="register">
+                  <p>
+                    Contact WKO office.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <button routerLink="contact">Contact Us</button>
+         </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+

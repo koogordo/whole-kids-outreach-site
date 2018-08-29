@@ -1,0 +1,157 @@
+<div class="subpage">
+  <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+  </button>
+
+  <div class="subpage-content container-fluid">
+    <div class="text-center">
+
+        <h2>Please Make a Donation</h2>
+        <hr>
+    </div>
+  <div class="row">
+    <div id="donate_box" class="col-md-6 col-md-offset-1">
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post" class="text-center">
+          <br>
+          <input name="cmd" type="hidden" value="_s-xclick">
+          <input id= "ppimage" alt="Make payments with PayPal - it's fast, free and secure!" name="submit" src="assets/img/thankyou/pp4.jpg" type="image">
+          <img src="https://www.paypal.com/en_US/i/scr/pixel.gif" border="0" alt="" width="1" height="1">
+          <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        </form>
+
+        <p>
+          <br>
+          Individual contributions are vital to our efforts to improve the lives of children and families in this region.
+        </p>
+          <ul>
+            <li>WKO is a 501(c)(3) nonprofit organization.</li>
+            <li>Contributions are tax deductible to the extent allowed by law.</li>
+            <li>We never sell, trade or publish a donor's personal information.</li>
+            <li>Registered with GuideStar for nonprofits:
+              <a href="http://www.guidestar.org/organizations/43-1839370/whole-kids-outreach.aspx" target="_blank">
+              <img src="assets/img/thankyou/guidestarlogo.gif">
+            </a></li>
+          </ul>
+
+        <hr>
+        <div class="row">
+
+          <div class="col-sm-4 col-md-4">
+            <div class="text-center">
+              <br>
+              <h3 class=" text-center "><strong>85&#37; of Revenue</strong></h3>
+              <h4 class=" text-center">Donations and Grants</h4>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <h3 class=" text-center "><strong>&#36;1,140,000</strong></h3>
+            <h4 class=" text-center ">Annual Budget</h4>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <br>
+            <h3 class=" text-center "><strong>76&#37; of Expenses</strong></h3>
+            <h4 class=" text-center ">Programming</h4>
+          </div>
+        </div>
+        <div class="row">
+            <img class="img-responsive img-center" src="/assets/img/expenses.png" alt="findraising=5%, administrative=19%, programs=76%">
+        </div>
+        <hr>
+        <div class="row text-center helpUs-img">
+         <a routerLink="thankyou">
+           Thank You!
+           <br><img class = "" src="../../assets/img/holdinghands3.jpg" alt=""></a>
+        </div>
+  </div>
+
+      <div class="col-md-4"  id="donation_taxcredit">
+        <h3 class=" text-center"><strong>WKO Financials</strong></h3>
+        <p>
+          To receive a copy of our latest 990s and/or financials,
+          please contact the WKO Office at 573-663-3257 or at
+          <a href="mailto:susancooper@wholekidsoutreach.org">susancooper@wholekidsoutreach.org</a>.
+        </p>
+        <h3 class=" text-center"><strong>Missouri Resident Tax Credits</strong></h3>
+
+        <p>
+          Whole Kids Outreach is often awarded tax credits from the State of Missouri,
+          which can be offered directly to qualified donors who pay taxes in the State of Missouri.
+          These credits are based on a nonprofit organization’s quality and
+          fiscal responsibility, as well as the measurable outcomes of the project presented.
+        </p>
+        <p class="text-center">
+          Currently, <strong>YOP</strong> and <strong>NAP</strong> tax credits are available through Whole Kids Outreach.
+        </p>
+        <blockquote>
+          [WKO regularly applies for tax credit program grants and the availability will change as projects
+          are approved and grants are expended.
+          Changes will be noted here, as necessary.]
+        </blockquote>
+        <p>
+          Further Information:
+        </p>
+        <ul>
+          <li>The <a href="https://www.ded.mo.gov/Ded/TaxCredits.aspx">
+            Missouri Tax Credit Forms</a> website provides both individual and
+          business forms required for the credits.</li>
+          <li>
+           The two basic types of programs through which WKO can typically offer tax credits to donors
+           are the Youth Opportunities Program (YOP) and the Neighborhood Assistance Program (NAP).
+          </li>
+        </ul>
+         <div class="text-right">
+          <button class="learn_more_button" (click)="show(); scrollToProgramDetails();">
+            Program Details&nbsp;
+            <i class="fa fa-arrow-down"></i>
+          </button>
+          </div>
+
+        <div id="programDetails" *ngIf="showtax">
+           <br>
+           <h4>Both Programs:</h4>
+            <ul>
+              <li>
+                A donation qualifies for tax credits in the year it is made.
+                If the amount of credit exceeds state tax liability for the taxable year in which the donation
+                is made, the credits can be carried over for the next five successive years.
+              </li>
+              <li>
+                Donations may be in the form of cash or appreciated securities.
+              </li>
+              <li>
+                If donating appreciated securities, the donor receives the tax credit based on the mean market
+                value of the securities on the date the transfer is authorized.
+                In addition, a donor making a gift of stock will owe no capital gains tax on any appreciation.
+              </li>
+              <li>
+                Donors are also able to claim the tax-deduction for their gifts to WKO.
+              </li>
+            </ul>
+            <br>
+            <h4>Youth Opportunity Program (YOP)</h4>
+              <ul>
+                <li>
+                  A donor filing an itemized return in Missouri can claim 50% of the donation as a state  tax credit to the limit of his/her taxable income.
+                </li>
+                <li>
+                  A minimum gift of $200 to WKO is required to obtain these credits.
+                </li>
+              </ul>
+            <br>
+            <h4>Neighborhood Assistance Program (NAP)</h4>
+            <ul>
+              <li>
+                A qualified donor can claim 70% of the donation as a state tax credit to the limit of his/her taxable income.
+              </li>
+              <li>
+                An eligible NAP donor is one who has business income in Missouri and be one of the following: a corporation; a small business corporation (S-Corporation); a limited liability corporation/partnership; a partnership; an individual partner in a partnership, member of a limited liability corporation or shareholder in an S-Corporation; a bank, credit institution, savings and loan association, credit union, farmer’s cooperative credit association or building and loan; an insurance company; an individual who has rental property in Missouri, has royalty income in Missouri, operates a sole proprietorship in Missouri, and/or operates a farm in Missouri.
+              </li>
+              <li>
+                A minimum gift of $10,000 to WKO is required to obtain these credits. In addition, donors who have not experienced WKO are asked to visit the Center in Ellington prior to making a gift.
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

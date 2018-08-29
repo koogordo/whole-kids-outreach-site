@@ -1,0 +1,236 @@
+.programs-nav-col {
+  text-align: right;
+}
+
+.programs-nav-col button {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.programs-nav-col h2 {
+  color: #a967aa;
+}
+.program {
+    max-width: 800px;
+}
+
+.program-featured {
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.program-featured img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  width: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+
+.program-featuerd div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.program-featured h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.program-featured h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.program-featured p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#programs_featured a:hover {
+  text-decoration: none;
+}
+.program-featured-text-top {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.program-featured-text-middle {
+  font-size: 1.1em;
+}
+
+.program-featured-text-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;  
+}
+
+.program-titlebar-text {
+  border-radius: 10px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.program {
+  margin-bottom: 20px;
+}
+
+.program div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.program-text {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  max-width: 450px;
+  /*clear: left;*/
+}
+
+.program img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  width: auto;
+  max-width: 100%;
+}
+
+.program-img {
+  padding: 0px;
+}
+
+.program h3 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.program p {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.program-section-title {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  max-width: 800px;
+}
+
+.program-section-title h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.program-green {
+  background-color: #60c69f;
+}
+
+.program-blue {
+  background-color: #5dcfe9;
+}
+
+.program-yellow {
+  background-color: #f9ca32;
+}
+
+.program-purple {
+  background-color: #a967aa;
+}
+
+/******* Indiviual Programs (called "kids_program") ********/ 
+
+.kids_img{
+  margin-bottom: 20px;
+}
+
+.kids_program{
+  border:solid;
+  border-width:1px;
+  border-radius:5px;
+  margin-bottom: 40px;
+}
+
+.kids_program_content {
+  padding: 20px;
+}
+.kids_program h3{
+  font: LatoBold;
+  font-variant: small-caps;
+}
+.kids_program p {
+    display: inline-block;
+}
+
+.kids_program li {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.kids_program img {
+   vertical-align: top;
+}
+
+.kids_program button{
+  background:#60c6a0;
+  font-size:20px;
+  color:white;
+  width:100%;
+  padding:10px;
+  border: none;  
+}
+.kids_program button:hover{
+  background-color:#a967aa;
+}
+
+/****** End individual Program *******/
+
+#home_visiting_descriptions h3 {
+  display: inline;
+  margin-left: 10px;
+}
+
+/************** Navigation Buttons************/
+.program_nav {
+  list-style-type: none;
+}
+.program_nav_button {
+  border:solid;
+  background:none;
+  color:#60c6a0;
+  border-width:2px;
+  padding:10px 20px;
+  width: 180px;
+  display: block;
+}
+.program_nav_button:hover {
+  background-color: #a967aa;
+  color: #FFFFFF;
+}
+.program_nav_button:focus  {
+  background-color: #a967aa;
+  color: #FFFFFF;
+  border: 0;
+}
+.program_nav_button:active  {
+  border: 0;
+}
+.no_show {
+  display:none;
+}
+

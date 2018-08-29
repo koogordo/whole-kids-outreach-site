@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Arvo-Italic";
+  src: url("../fonts/Arvo-Italic.ttf");
+}
+
+@media (max-width: 991) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1199px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Cabin', sans-serif;
+  margin:0;
+	padding:0;
+	height:100%;
+}
+.view {
+  padding: 0;
+  /*min-height: 760px;*/
+}
+a {
+  color: #a967aa;
+}
+p {
+  font-size: 1.1em;
+}
+.white {
+  color: white;
+}
+.clear {
+ clear: both;
+}
+.text-shadow {
+    text-shadow: 0 1px 0 #ccc;
+}
+.jumbotron h2 {
+    font-family : Arvo-Italic;
+    color: #a967aa;
+}
+.avro  {
+    font-family : Arvo-Italic;
+    color: #a967aa;
+    text-align: center;
+}
+.container-fluid .jumbotron{
+    border-radius: 0px;
+}
+.emph {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #a967aa;
+}
+.text-right {
+  text-align: right;
+}
+.donate-button-border {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a967aa;
+  padding: 7px;
+}
+a  img:hover, #ppimage:hover {
+  opacity: .50;
+}
+.action {
+  font-size: 1.5em;
+  color: #a967aa;
+}
+.action a {
+  text-decoration: none;
+}
+.action span {
+  display: inline-block;
+}
+.action_arrow_p {
+  vertical-align: middle;
+  height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/purple.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_p:hover {
+	height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/purple2.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_g {
+  vertical-align: middle;
+  height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/green.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_g:hover {
+	height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/green2.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_w {
+  vertical-align: middle;
+  height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/white.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_w:hover {
+	height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/white2.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_b {
+  vertical-align: middle;
+  height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/blue.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_b:hover {
+	height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/blue2.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_y {
+  vertical-align: middle;
+  height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/yellow.png);
+	background-repeat: no-repeat;
+}
+.action_arrow_y:hover {
+	height:30px;
+	width: 30px;
+	background-image: url(../img/arrows/yellow2.png);
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,120 @@
+.flex-ticker {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  height: 35px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  flex: 1 1 auto;
+}
+
+.flex-item {
+  flex: 1 1 auto;
+}
+
+.see-more-link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+  color: white;
+  background-color: #a967aa;
+  margin-left: 15px;
+}
+
+.see-more-link:hover {
+  color: #a967aa;
+  background: white;
+  text-decoration: none;
+}
+
+.flex-event-link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: rgb(40,40,40);
+  font-size: 1.2em;
+}
+
+
+.flex-event-link:hover {
+    border-bottom: solid 2px #a967aa;
+    text-decoration: none;
+    color: #a967aa;
+    transition: ease-in-out .15s;
+}
+
+
+.event-detail {
+  color: white;
+}
+
+.event-description-wrap{
+  width: 300px;
+}
+
+.no-pad {
+  padding: 0px;
+}
+
+.event-card {
+  height: 275px;
+  width: 200px;
+  margin: auto;
+}
+
+.pad-left {
+  padding-left: 50px;
+}
+
+.event-image {
+  height: 250px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.custom-card {
+  width: 100%;
+  margin: auto;
+}
+
+.side-margin {
+  width: 80% !important;
+  margin: auto !important;
+}
+
+
+.event-link-wrap {
+  width: 195px;
+  height: 37px;
+  padding-top: 20px;
+}
+
+.override-container {
+  margin: auto;
+  width: 900px;
+}
+.override-col {
+  height: 37px;
+}
+
+.new-event-icon {
+  color:  #a967aa;
+}
+
+.push-right {
+  margin-left: 10px;
+}
+
+
+

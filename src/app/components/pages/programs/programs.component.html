@@ -1,0 +1,180 @@
+<script type="text/javascript">
+  $('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});
+</script>
+
+<div class="header-color"></div>
+
+<div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+  <div class="wrapper story-wrapper general-wrapper story-container-fluid ">
+    <h2 class="avro">
+      Programs
+    </h2>
+    <div class="row">
+      <p class="col-md-10 col-md-offset-1 text-center">
+        <span class="emph">W</span>hole
+        <span class="emph">K</span>ids
+        <span class="emph">O</span>utreach
+        offers home visits and center-based programs that support children and families in
+        isolated, rural areas to help children live holistic, productive lives
+        free from preventable abuse, neglect and illness.
+        <br><br>
+      </p>
+    </div>
+
+    <div class="programs-col col-sm-12 col-md-9 col-lg-9">
+      <div id="programs_featured" >
+        <div class="program-section-title row program">
+          <div class="action col-sm-12 col-md-12 col-lg-12 col">
+            <h2 class="text-center program-titlebar-text program-purple">
+              Featured Program
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <a routerLink="program-view/{{ featuredprog.$id }}">
+            <div class="program-featured col-sm-12 col-md-12 col-lg-12 col">
+              <div class="program-img col-sm-12 col-md-12 col-lg-12 col">
+                <img src="{{featuredprog.featuredimg.url}}" alt="Camp featured image">
+              </div>
+              <div class="program-featured-text-middle program-purple action col-sm-12 col-md-12 col-lg-12 col">
+                <p>
+                  {{ featuredprog.description }}
+                </p>
+              </div>
+              <div class="program-featured-text-bottom program-purple action col-sm-12 col-md-12 col-lg-12 col">
+                <h3>
+                  {{ featuredprog.title }}&nbsp;
+                  <span class="action_arrow_w img-center">
+                      <!-- arrow defined in css -->
+                  </span>
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+        <div id="programs_homevisit">
+        <div class="program-section-title row program">
+          <div class="action col-sm-12 col-md-12 col-lg-12 col">
+            <h2 class="text-center program-titlebar-text program-green">
+              Home Visits Programs
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+
+        <a *ngFor="let prog of homeVisit" routerLink="program-view/{{prog.$id}}">
+          <div class="program col-xs-12 col-sm-4 col-md-4 col-lg-4 col ">
+            <div class="program-img col-xs-12 col-sm-12 col-md-12 col-lg-12 col">
+              <img src="{{prog.featuredimg.url}}" alt="healthy family image">
+            </div>
+            <div class="program-text program-green action text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 col">
+              <h3>
+                {{prog.title}}&nbsp;
+                <span class="action_arrow_w img-center">
+                    <!-- arrow defined in css -->
+                </span>
+              </h3>
+            </div>
+          </div>
+        </a>
+
+        </div>
+    </div>
+
+       <div  id="programs_centerkids" >
+        <div class="program-section-title row program">
+          <div class="action col-sm-12 col-md-12 col-lg-12 col">
+            <h2 class="text-center program-titlebar-text program-blue ">
+              Center-Based Kids Programs
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <a *ngFor="let prog of centerKid" routerLink="program-view/{{prog.$id}}">
+            <div class="program col-xs-12 col-sm-4 col-md-4 col-lg-4 col">
+              <div class="program-img col-xs-12 col-sm-12 col-md-12 col-lg-12 col">
+                <img src="{{prog.featuredimg.url}}" alt="riding image">
+              </div>
+              <div class="program-text program-blue action col-xs-12 col-sm-12 col-md-12 col-lg-12 col">
+                <h3>
+                 {{prog.title}}&nbsp;&nbsp;&nbsp; &nbsp;
+                  <span class="action_arrow_w img-center">
+                      <!-- arrow defined in css -->
+                  </span>
+                </h3>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div  id="programs_centerparents">
+        <div class="program-section-title row program">
+          <div class="action col-sm-12 col-md-12 col-lg-12 col">
+            <h2 class="text-center program-titlebar-text program-yellow ">
+              Center-Based Family Programs
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <a *ngFor="let prog of centerFamily" routerLink="program-view/{{prog.$id}}">
+            <div class="program col-xs-12 col-sm-4 col-md-4 col-lg-4 col">
+              <div class="program-img col-xs-12 col-sm-12 col-md-12 col-lg-12 col">
+                <img src="{{prog.featuredimg.url}}" alt="xmas image">
+              </div>
+              <div class="program-text program-yellow action col-xs-12 col-sm-12 col-md-12 col-lg-12 col">
+                <h3>
+                  {{prog.title}}&nbsp;
+                  <span class="action_arrow_w img-center">
+                      <!-- arrow defined in css -->
+                  </span>
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="programs-nav-col sticky col-sm-3 col-md-3 col-lg-3">
+      <ul class="program_nav">
+        <li class="col-sm-12 col-md-12 col-lg-12">
+          <button class="program_nav_button " (click)="scrollToFeatured($event)">
+            <div>
+              Featured&nbsp;
+              <i id="program_featured_nav" class="fa fa-arrow-circle-up no_show"></i>
+            </div>
+          </button>
+        </li>
+        <li class="col-sm-12 col-md-12 col-lg-12">
+          <button class="program_nav_button" (click)="scrollToHomeVisits($event)">
+            <div>
+              Home Visits&nbsp;
+              <i id="program_home_nav" class="fa fa-arrow-circle-down no_show"></i>
+            </div>
+          </button>
+        </li>
+        <li class="col-sm-12 col-md-12 col-lg-12">
+          <button class="program_nav_button" (click)="scrollToCenterBased($event)">
+            <div>
+              Center-Based&nbsp;
+              <i id="program_center_nav" class="fa fa-arrow-circle-down no_show"></i>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

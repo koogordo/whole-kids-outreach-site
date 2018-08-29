@@ -1,0 +1,64 @@
+<script>
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  function goBack() {
+    window.history.back()
+  }
+</script>
+
+<div class="subpage">
+  <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+  </button>
+
+
+  <div class= "subpage-content container">
+
+    <h2></h2>
+    <hr>
+    <br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <carousel>
+            <slide *ngFor="let x of viewProgram.images">
+              <img src="{{x.url}}" alt="{{x}}" style="display: block; width: 750px; height:500px;">
+            </slide>
+          </carousel>
+        <!-- <ul class="image-slider">
+          <li *ngFor="let x of images" >
+            <img  src="assets/img/programs/camp/{{x}}" alt="{{x}}">
+          </li>
+        </ul> -->
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+        <div class="kids_program">
+         <div class="kids_program_content">
+            <h3>{{ viewProgram.title }}</h3>
+            <p>
+              {{viewProgram.tagline}}
+            </p>
+            <ul>
+              <li>
+                <img src="assets/img/icons/person.png" alt="person">
+                <p> {{viewProgram.forwho}}</p>
+              </li>
+              <li>
+                <img src="assets/img/icons/clock.png" alt="clock">
+                <p> {{viewProgram.when}}</p>
+              </li>
+              <li>
+                <img src="assets/img/icons/register.png" alt="register">
+                <p>
+                  {{viewProgram.howtoreg}}
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button routerLink="contact">Contact Us</button>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

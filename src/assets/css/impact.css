@@ -1,0 +1,38 @@
+/*
+.padding-left 
+{
+  padding-left: 10px;
+}
+
+.impact-wrapper {
+  
+}
+*/
+
+.impact-stats dt {
+  font-size: 1.2em;
+}
+.impact-stats dt.need {
+  color: #5dcfe9;
+}
+.impact-stats dt.impact {
+  color: #f8ca31;
+}
+.impact-stats dd {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.impact-stats ul {
+  margin-left: 40px;
+}
+.impact-stats-info {
+  margin-left: 60px;
+}
+.impact-stats img {
+  border: 2px solid #a967aa;
+}
+.impact-stats img:hover {
+  border: 4px solid #854C9D;
+  margin: -2px auto;
+}

@@ -1,0 +1,66 @@
+<script>
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  function goBack() {
+    window.history.back()
+  }
+</script>
+
+<div class="subpage">
+  <button type="button" class="subpage-back" aria-label="Left Align" onclick="goBack()">
+  </button>
+
+
+  <div class= "subpage-content container">
+
+    <h2></h2>
+    <hr>
+    <br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <carousel>
+            <slide *ngFor="let x of images">
+              <img src="assets/img/programs/camp/{{x}}" alt="{{x}}" style="display: block; width: 750px; height:500px;">
+            </slide>
+          </carousel>
+        <!-- <ul class="image-slider">
+          <li *ngFor="let x of images" >
+            <img  src="assets/img/programs/camp/{{x}}" alt="{{x}}">
+          </li>
+        </ul> -->
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+        <div class="kids_program">
+         <div class="kids_program_content">
+            <h3>Camp Whole Kids</h3>
+            <p>
+              Supervised, safe, and fun environment for building lifelong memories,
+              friendships, and new skills.
+            </p>
+            <ul>
+              <li>
+                <img src="assets/img/icons/person.png" alt="person">
+                <p>Children ages 4-12</p>
+              </li>
+              <li>
+                <img src="assets/img/icons/clock.png" alt="clock">
+                <p>One-week sessions, mid-June thru mid-July</p>
+              </li>
+              <li>
+                <img src="assets/img/icons/register.png" alt="register">
+                <p>
+                  Registration begins in late March.
+                  <br>Contact WKO office for registration materials.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button routerLink="contact">Contact Us</button>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
